@@ -1,0 +1,85 @@
+<!DOCTYPE html5>
+<html lang="es-PE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Margarine&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./assets/encriptador2.png" type="image/icon type">
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header class="encabezado">
+        <section class="encabezado__presentacion">
+            <div class="encabezado__presentacion__logos">
+                <img src="./assets/one.jpg">
+            
+            </div>
+
+            <div class="encabezado__presentacion__titulo">
+                <h1>Encriptador de texto</h1>
+            </div>
+
+            <div class="encabezado__presentacion__logos">
+                <img src="./assets/alura.jpg">
+            </div>
+          
+        </section>
+    </header> 
+
+
+    <!-- Área del contenido principal -->
+    <main class="principal">
+        <h4></h4>
+
+        <!-- área donde se introducira el texto a ser encriptado -->
+        <section class="principal__area">
+            <div class="area1">                   
+                <div>
+                    <textarea id="input-area" class="principal__area__entrada" cols="60" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                </div>
+                <p class="advertencia">NO SE ACEPTAN MAYÚSCULAS NI CARACTÉRES ESPECIALES</p>
+                <div class="principal__area__area1__botones">
+                    <input type="submit" onclick="encriptacion();" class="area1__boton" id="encriptar" value="Encriptar"></input>
+                    <input type="submit" onclick="desencriptacion();" class="area1__boton" id="desencriptar" value="Desencriptar"></input>
+                    <input type="submit" onclick="copiarTexto();" class="area1__boton" value="Copiar"  id="copiar" >
+                </div>
+                
+            </div>
+            
+            <!-- área donde se mostrará el texto encriptado -->
+            <div class="area2">
+                <textarea id="output-area" class="principal__area__salida"readonly  cols="60" rows="10">mensaje</textarea>
+                
+            </div>
+        </section>
+        
+        <!-- <p class="advertencia">NO SE ACEPTAN MAYÚSCULAS NI CARACTÉRES ESPECIALES</p>
+        <div class="principal__area__area1__botones">
+            <input type="submit" onclick="encriptacion();" class="area1__boton" id="encriptar" value="Encriptar"></input>
+            <input type="submit" onclick="desencriptacion();" class="area1__boton" id="desencriptar" value="Desencriptar"></input>
+            <input type="submit" onclick="copiarTexto();" class="area1__boton" value="Copiar"  id="copiar" >
+        </div> -->
+    </main>
+    
+    <!-- Área del footer -->
+    <footer>
+        <p class="copyright">&copy Copyright Encriptador de texto - 2024</p>
+        <div class="enlaces">
+            <a href="https://www.linkedin.com/in/angelomauriciofloressoria/" ><img src="./assets/icon-linkedin.png"></a>
+            <a href="https://github.com/mauro9318"><img src="./assets/icon-github.png"></a>
+
+            
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
+
